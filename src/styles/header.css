@@ -1,0 +1,88 @@
+/* Header Styles */
+
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 50;
+  background: hsl(var(--card) / 0.8);
+  backdrop-filter: blur(12px);
+  border-bottom: 1px solid hsl(var(--primary) / 0.1);
+}
+
+.header-container {
+  padding: 1rem 1.5rem;
+}
+
+.header-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header-brand {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.header-logo {
+  width: 2.5rem;
+  height: 2.5rem;
+}
+
+.header-title {
+  font-size: 1.25rem;
+  font-weight: 700;
+  background: var(--gradient-primary);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  margin: 0;
+}
+
+.header-subtitle {
+  font-size: 0.75rem;
+  color: hsl(var(--muted-foreground));
+  margin: 0;
+}
+
+.header-nav {
+  display: none;
+  align-items: center;
+  gap: 2rem;
+}
+
+.header-nav a {
+  color: hsl(var(--foreground));
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.header-nav a:hover {
+  color: hsl(var(--primary));
+}
+
+.header-actions {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.header-actions .btn-outline {
+  display: none;
+}
+
+/* Responsive Design */
+@media (min-width: 768px) {
+  .header-nav {
+    display: flex;
+  }
+}
+
+@media (min-width: 640px) {
+  .header-actions .btn-outline {
+    display: inline-flex;
+  }
+}

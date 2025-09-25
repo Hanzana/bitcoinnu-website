@@ -1,47 +1,47 @@
-import { Button } from "@/components/ui/button";
 import bitcoinNuIcon from "@/assets/bitcoinnu-icon.png";
+import "../styles/header.css";
 
 const Header = () => {
   return (
-    <header className="fixed top-0 left-0 right-0 z-50 bg-card/80 backdrop-blur-md border-b border-primary/10">
-      <div className="container mx-auto px-6 py-4">
-        <div className="flex items-center justify-between">
-          <div className="flex items-center space-x-3">
+    <header className="header">
+      <div className="container header-container">
+        <div className="header-content">
+          <div className="header-brand">
             <img 
               src={bitcoinNuIcon} 
               alt="BitcoinNu Logo" 
-              className="w-10 h-10 animate-float"
+              className="header-logo animate-float"
             />
             <div>
-              <h1 className="text-xl font-bold bg-gradient-primary bg-clip-text text-transparent">
+              <h1 className="header-title">
                 BitcoinNu
               </h1>
-              <p className="text-xs text-muted-foreground">Next-Gen Crypto</p>
+              <p className="header-subtitle">Next-Gen Crypto</p>
             </div>
           </div>
           
-          <nav className="hidden md:flex items-center space-x-8">
-            <a href="#features" className="text-foreground hover:text-primary transition-colors">
+          <nav className="header-nav">
+            <a href="#features">
               Features
             </a>
-            <a href="#tokenomics" className="text-foreground hover:text-primary transition-colors">
+            <a href="#tokenomics">
               Tokenomics
             </a>
-            <a href="#roadmap" className="text-foreground hover:text-primary transition-colors">
+            <a href="#roadmap">
               Roadmap
             </a>
-            <a href="#community" className="text-foreground hover:text-primary transition-colors">
+            <a href="#community">
               Community
             </a>
           </nav>
           
-          <div className="flex items-center space-x-4">
-            <Button variant="outline" size="sm" className="hidden sm:inline-flex">
+          <div className="header-actions">
+            <button className="btn btn-outline btn-sm">
               Whitepaper
-            </Button>
-            <Button variant="hero" size="sm">
+            </button>
+            <button className="btn btn-hero btn-sm">
               Buy $BTCNU
-            </Button>
+            </button>
           </div>
         </div>
       </div>

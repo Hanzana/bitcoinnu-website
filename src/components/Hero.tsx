@@ -1,102 +1,99 @@
-import { Button } from "@/components/ui/button";
 import { ArrowRight, TrendingUp, Shield, Zap } from "lucide-react";
 import heroBg from "@/assets/hero-bg.jpg";
 import bitcoinNuIcon from "@/assets/bitcoinnu-icon.png";
+import "../styles/hero.css";
 
 const Hero = () => {
   return (
-    <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
+    <section className="hero">
       {/* Background */}
       <div 
-        className="absolute inset-0 bg-cover bg-center bg-no-repeat opacity-20"
+        className="hero-bg"
         style={{ backgroundImage: `url(${heroBg})` }}
       />
       
       {/* Gradient Overlay */}
-      <div className="absolute inset-0 bg-gradient-hero" />
+      <div className="hero-overlay" />
       
       {/* Floating Elements */}
-      <div className="absolute top-20 left-10 w-20 h-20 bg-primary/10 rounded-full animate-float" 
-           style={{ animationDelay: '0s' }} />
-      <div className="absolute top-40 right-20 w-16 h-16 bg-crypto-blue/10 rounded-full animate-float" 
-           style={{ animationDelay: '2s' }} />
-      <div className="absolute bottom-20 left-20 w-12 h-12 bg-crypto-gold/10 rounded-full animate-float" 
-           style={{ animationDelay: '4s' }} />
+      <div className="hero-floating-element hero-floating-1" />
+      <div className="hero-floating-element hero-floating-2" />
+      <div className="hero-floating-element hero-floating-3" />
       
-      <div className="relative z-10 container mx-auto px-6 py-20 text-center">
-        <div className="max-w-4xl mx-auto">
+      <div className="hero-content">
+        <div className="container hero-inner">
           {/* Logo */}
-          <div className="mb-8 flex justify-center">
+          <div className="hero-logo-container">
             <img 
               src={bitcoinNuIcon} 
               alt="BitcoinNu" 
-              className="w-24 h-24 animate-pulse-glow"
+              className="hero-logo"
             />
           </div>
           
           {/* Main Heading */}
-          <h1 className="text-5xl md:text-7xl font-bold mb-6 leading-tight">
-            <span className="bg-gradient-primary bg-clip-text text-transparent">
+          <h1 className="hero-title">
+            <span className="hero-title-primary">
               BitcoinNu
             </span>
             <br />
-            <span className="text-foreground">
+            <span className="hero-title-secondary">
               The Future of
             </span>
             <br />
-            <span className="text-crypto-blue">
+            <span className="hero-title-accent">
               Digital Currency
             </span>
           </h1>
           
           {/* Subtitle */}
-          <p className="text-xl md:text-2xl text-muted-foreground mb-12 max-w-2xl mx-auto">
+          <p className="hero-subtitle">
             Experience lightning-fast transactions, unparalleled security, and revolutionary 
             blockchain technology with BitcoinNu.
           </p>
           
           {/* Features Icons */}
-          <div className="flex justify-center items-center space-x-8 mb-12">
-            <div className="flex flex-col items-center space-y-2">
-              <div className="p-3 bg-gradient-card rounded-full shadow-crypto">
-                <Zap className="w-6 h-6 text-primary" />
+          <div className="hero-features">
+            <div className="hero-feature">
+              <div className="hero-feature-icon">
+                <Zap />
               </div>
-              <span className="text-sm text-muted-foreground">Lightning Fast</span>
+              <span className="hero-feature-text">Lightning Fast</span>
             </div>
-            <div className="flex flex-col items-center space-y-2">
-              <div className="p-3 bg-gradient-card rounded-full shadow-crypto">
-                <Shield className="w-6 h-6 text-crypto-blue" />
+            <div className="hero-feature">
+              <div className="hero-feature-icon">
+                <Shield />
               </div>
-              <span className="text-sm text-muted-foreground">Ultra Secure</span>
+              <span className="hero-feature-text">Ultra Secure</span>
             </div>
-            <div className="flex flex-col items-center space-y-2">
-              <div className="p-3 bg-gradient-card rounded-full shadow-crypto">
-                <TrendingUp className="w-6 h-6 text-crypto-gold" />
+            <div className="hero-feature">
+              <div className="hero-feature-icon">
+                <TrendingUp />
               </div>
-              <span className="text-sm text-muted-foreground">High Growth</span>
+              <span className="hero-feature-text">High Growth</span>
             </div>
           </div>
           
           {/* CTA Buttons */}
-          <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
-            <Button variant="hero" size="lg" className="text-lg px-8 py-4">
+          <div className="hero-actions">
+            <button className="btn btn-hero btn-lg">
               Buy $BTCNU Now
-              <ArrowRight className="w-5 h-5 ml-2" />
-            </Button>
-            <Button variant="crypto" size="lg" className="text-lg px-8 py-4">
+              <ArrowRight />
+            </button>
+            <button className="btn btn-crypto btn-lg">
               Learn More
-            </Button>
+            </button>
           </div>
           
           {/* Price Info */}
-          <div className="mt-12 p-6 bg-gradient-card rounded-xl border border-primary/20 shadow-card max-w-md mx-auto">
-            <div className="flex justify-between items-center">
-              <span className="text-muted-foreground">Current Price</span>
-              <span className="text-2xl font-bold text-primary">$0.0042</span>
+          <div className="hero-price-card">
+            <div className="hero-price-row">
+              <span className="hero-price-label">Current Price</span>
+              <span className="hero-price-value">$0.0042</span>
             </div>
-            <div className="flex justify-between items-center mt-2">
-              <span className="text-muted-foreground">24h Change</span>
-              <span className="text-green-400 font-semibold">+12.8%</span>
+            <div className="hero-price-row">
+              <span className="hero-price-label">24h Change</span>
+              <span className="hero-price-change">+12.8%</span>
             </div>
           </div>
         </div>

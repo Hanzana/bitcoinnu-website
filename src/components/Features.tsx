@@ -1,84 +1,81 @@
-import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Zap, Shield, Globe, DollarSign, Users, Cpu } from "lucide-react";
+import "../styles/features.css";
 
 const features = [
   {
     icon: Zap,
     title: "Lightning Transactions",
     description: "Process transactions in under 3 seconds with our advanced blockchain technology.",
-    color: "text-primary"
+    colorClass: "primary"
   },
   {
     icon: Shield,
     title: "Military-Grade Security",
     description: "Advanced encryption and multi-layer security protocols protect your assets.",
-    color: "text-crypto-blue"
+    colorClass: "blue"
   },
   {
     icon: DollarSign,
     title: "Low Transaction Fees",
     description: "Enjoy minimal fees that are 90% lower than traditional cryptocurrencies.",
-    color: "text-crypto-gold"
+    colorClass: "gold"
   },
   {
     icon: Globe,
     title: "Global Accessibility",
     description: "Access your BitcoinNu wallet from anywhere in the world, 24/7.",
-    color: "text-green-400"
+    colorClass: "green"
   },
   {
     icon: Users,
     title: "Community Driven",
     description: "Governed by our community with transparent voting mechanisms.",
-    color: "text-purple-400"
+    colorClass: "purple"
   },
   {
     icon: Cpu,
     title: "Smart Contracts",
     description: "Deploy and execute smart contracts with ease on our platform.",
-    color: "text-cyan-400"
+    colorClass: "cyan"
   }
 ];
 
 const Features = () => {
   return (
-    <section id="features" className="py-20 relative">
-      <div className="container mx-auto px-6">
-        <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-bold mb-6">
+    <section id="features" className="features">
+      <div className="container features-container">
+        <div className="features-header">
+          <h2 className="features-title">
             Why Choose{" "}
-            <span className="bg-gradient-primary bg-clip-text text-transparent">
+            <span className="features-title-accent">
               BitcoinNu?
             </span>
           </h2>
-          <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
+          <p className="features-subtitle">
             Discover the revolutionary features that make BitcoinNu the next generation 
             of digital currency technology.
           </p>
         </div>
         
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div className="features-grid">
           {features.map((feature, index) => {
             const IconComponent = feature.icon;
             return (
-              <Card 
-                key={index} 
-                className="bg-gradient-card border-primary/20 hover:border-primary/40 transition-all duration-300 hover:shadow-card hover:transform hover:scale-105"
-              >
-                <CardHeader className="pb-4">
-                  <div className={`p-3 w-fit rounded-full bg-card/50 mb-4 ${feature.color}`}>
-                    <IconComponent className="w-8 h-8" />
+              <div key={index} className="feature-card">
+                <div className="feature-card-header">
+                  <div className={`feature-card-icon ${feature.colorClass}`}>
+                    <IconComponent />
                   </div>
-                  <CardTitle className="text-xl font-semibold text-foreground">
+                  <h3 className="feature-card-title">
                     {feature.title}
-                  </CardTitle>
-                </CardHeader>
-                <CardContent>
-                  <p className="text-muted-foreground leading-relaxed">
+                  </h3>
+                </div>
+                <div className="feature-card-content">
+                  <p className="feature-card-description">
                     {feature.description}
                   </p>
-                </CardContent>
-              </Card>
+                </div>
+              </div>
             );
           })}
         </div>
