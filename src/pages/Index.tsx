@@ -24,7 +24,7 @@ const Index = () => {
                 <h3 className="footer-brand-title">BitcoinNu</h3>
               </div>
               <p className="footer-brand-description">
-                Your trusted platform for cryptocurrency trading and wallet management.
+                Your trusted platform for cryptocurrency and wallet management.
                 Experience the future of digital currency today.
               </p>
               <div className="footer-social">
