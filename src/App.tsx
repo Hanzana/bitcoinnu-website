@@ -4,7 +4,9 @@ import { TooltipProvider } from "@/components/ui/tooltip";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Index from "./pages/Index";
+import Footer from "./components/Footer";
 import NotFound from "./pages/NotFound";
+import WhitePaper from "./pages/WhitePaper";
 
 const queryClient = new QueryClient();
 
@@ -16,8 +18,10 @@ const App = () => (
       <BrowserRouter basename="/bitcoinnu-website">
         <Routes>
           <Route path="/" element={<Index />} />
+          <Route path="/whitepaper" element={<WhitePaper />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
+        <Footer />
       </BrowserRouter>
     </TooltipProvider>
   </QueryClientProvider>
