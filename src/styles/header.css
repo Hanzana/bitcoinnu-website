@@ -81,6 +81,12 @@
   }
 }
 
+.header-logo-link,
+.header-text-link {
+  text-decoration: none;
+  color: inherit;
+}
+
 @media (min-width: 640px) {
   .header-actions .btn-outline {
     display: inline-flex;
