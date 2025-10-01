@@ -1,8 +1,11 @@
 import { Link } from "react-router-dom";
+import { useState } from "react";
 import bitcoinNuIcon from "@/assets/bitcoinnu-icon.png";
 import "../styles/header.css";
 
 const Header = () => {
+  const [isIntroDropdownOpen, setIsIntroDropdownOpen] = useState(false);
+
   return (
     <header className="header">
       <div className="container header-container">
@@ -25,7 +28,44 @@ const Header = () => {
           
           <nav className="header-nav">
             <a href="#features">Features</a>
-            <a href="#introduction">Introduction</a>
+            
+            <div 
+              className="dropdown"
+              onMouseEnter={() => setIsIntroDropdownOpen(true)}
+              onMouseLeave={() => setIsIntroDropdownOpen(false)}
+            >
+              <button 
+                className="dropdown-trigger"
+                onClick={() => setIsIntroDropdownOpen(!isIntroDropdownOpen)}
+              >
+                Introduction
+                <svg 
+                  className={`dropdown-arrow ${isIntroDropdownOpen ? 'open' : ''}`}
+                  width="12" 
+                  height="12" 
+                  viewBox="0 0 12 12" 
+                  fill="none"
+                >
+                  <path d="M3 4.5L6 7.5L9 4.5" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
+                </svg>
+              </button>
+              
+              {isIntroDropdownOpen && (
+                <div className="dropdown-menu">
+                  <Link 
+                    to="/whitepaper" 
+                    className="dropdown-item"
+                    onClick={() => {
+                      setIsIntroDropdownOpen(false);
+                      window.scrollTo(0, 0);
+                    }}
+                  >
+                    White Paper
+                  </Link>
+                </div>
+              )}
+            </div>
+            
             <a href="#resources">Resources</a>
             <a href="#innovation">Innovation</a>
             <a href="#participate">Participate</a>
