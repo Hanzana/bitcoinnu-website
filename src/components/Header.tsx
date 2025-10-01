@@ -15,7 +15,7 @@ const Header = () => {
               <img 
                 src={bitcoinNuIcon} 
                 alt="BitcoinNu Logo" 
-                className="header-logo animate-float"
+                className="header-logo"
               />
             </Link>
             <div className="header-text">
@@ -73,8 +73,6 @@ const Header = () => {
           </nav>
           
           <div className="header-actions">
-            <button className="btn btn-outline btn-sm">My Wallet</button>
-            <button className="btn btn-hero btn-sm">Buy $BTCNU</button>
           </div>
         </div>
       </div>

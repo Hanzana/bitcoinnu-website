@@ -1,4 +1,5 @@
 import { ArrowRight, TrendingUp, Shield, Zap } from "lucide-react";
+import { Link } from "react-router-dom";
 import heroBg from "@/assets/hero-bg.jpg";
 import bitcoinNuIcon from "@/assets/bitcoinnu-icon.png";
 import "../styles/hero.css";
@@ -61,16 +62,14 @@ const Hero = () => {
             </div>
           </div>
           <div className="hero-actions">
-            <button className="btn btn-hero btn-lg">
-              Buy $BTCNU Now
+            <Link 
+              to="/downloads" 
+              className="btn btn-hero btn-lg"
+              onClick={() => window.scrollTo(0, 0)}
+            >
+              Get Started
               <ArrowRight />
-            </button>
-            <button className="btn btn-crypto btn-lg">
-              Get Started With BitcoinNu
-            </button>
-            <button className="btn btn-crypto btn-lg">
-              Choose Your Wallet
-            </button>
+            </Link>
           </div>
           <div className="hero-price-card">
             <div className="hero-price-row">

@@ -39,24 +39,11 @@ const Footer = () => {
 
           <div className="footer-links">
             <div className="footer-links-column">
-              <h4 className="footer-links-title">Products</h4>
-              <ul className="footer-links-list">
-                <li><a href="#" className="footer-link">Buy Bitcoin</a></li>
-                <li><a href="#" className="footer-link">Crypto Wallet</a></li>
-                <li><a href="#" className="footer-link">Trading Platform</a></li>
-                <li><a href="#" className="footer-link">Mobile App</a></li>
-                <li><a href="#" className="footer-link">API Access</a></li>
-              </ul>
-            </div>
-
-            <div className="footer-links-column">
               <h4 className="footer-links-title">Support</h4>
               <ul className="footer-links-list">
-                <li><a href="#" className="footer-link">Help Center</a></li>
                 <li><a href="#" className="footer-link">Contact Us</a></li>
+                <li><a href="#" className="footer-link">Help Center</a></li>
                 <li><a href="#" className="footer-link">Security</a></li>
-                <li><a href="#" className="footer-link">Status</a></li>
-                <li><a href="#" className="footer-link">Bug Bounty</a></li>
               </ul>
             </div>
 
@@ -65,8 +52,6 @@ const Footer = () => {
               <ul className="footer-links-list">
                 <li><a href="#" className="footer-link">About Us</a></li>
                 <li><a href="#" className="footer-link">Careers</a></li>
-                <li><a href="#" className="footer-link">Press</a></li>
-                <li><a href="#" className="footer-link">Blog</a></li>
                 <li><a href="#" className="footer-link">Legal</a></li>
               </ul>
             </div>
@@ -74,7 +59,6 @@ const Footer = () => {
             <div className="footer-links-column">
               <h4 className="footer-links-title">Resources</h4>
               <ul className="footer-links-list">
-                <li><a href="#" className="footer-link">Documentation</a></li>
                 <li>
                   <Link 
                     to="/whitepaper" 
@@ -86,7 +70,6 @@ const Footer = () => {
                 </li>
                 <li><a href="#" className="footer-link">Roadmap</a></li>
                 <li><a href="#" className="footer-link">Community</a></li>
-                <li><a href="#" className="footer-link">News</a></li>
               </ul>
             </div>
           </div>
