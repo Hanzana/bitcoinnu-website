@@ -8,6 +8,7 @@ import Footer from "./components/Footer";
 import NotFound from "./pages/NotFound";
 import WhitePaper from "./pages/WhitePaper";
 import Downloads from "./pages/Downloads";
+import RoadMap from "./pages/RoadMap";
 
 const queryClient = new QueryClient();
 
@@ -21,6 +22,7 @@ const App = () => (
           <Route path="/" element={<Index />} />
           <Route path="/whitepaper" element={<WhitePaper />} />
           <Route path="/downloads" element={<Downloads />} />
+          <Route path="/roadmap" element={<RoadMap />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
         <Footer />

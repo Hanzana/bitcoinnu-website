@@ -3,7 +3,7 @@ import { Twitter, Linkedin, Github } from "lucide-react";
 import bitcoinNuIcon from "@/assets/bitcoinnu-icon.png";
 
 const Footer = () => {
-  const handleWhitepaperClick = () => {
+  const handleLinkClick = () => {
     window.scrollTo(0, 0);
   };
 
@@ -63,12 +63,20 @@ const Footer = () => {
                   <Link 
                     to="/whitepaper" 
                     className="footer-link"
-                    onClick={handleWhitepaperClick}
+                    onClick={handleLinkClick}
                   >
                     Whitepaper
                   </Link>
                 </li>
-                <li><a href="#" className="footer-link">Roadmap</a></li>
+                <li>
+                  <Link 
+                    to="/roadmap" 
+                    className="footer-link"
+                    onClick={handleLinkClick}
+                  >
+                    Roadmap
+                  </Link>
+                </li>
                 <li><a href="#" className="footer-link">Community</a></li>
               </ul>
             </div>

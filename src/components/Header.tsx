@@ -6,6 +6,11 @@ import "../styles/header.css";
 const Header = () => {
   const [isIntroDropdownOpen, setIsIntroDropdownOpen] = useState(false);
 
+  const handleLinkClick = () => {
+    setIsIntroDropdownOpen(false);
+    window.scrollTo(0, 0);
+  };
+
   return (
     <header className="header">
       <div className="container header-container">
@@ -55,12 +60,16 @@ const Header = () => {
                   <Link 
                     to="/whitepaper" 
                     className="dropdown-item"
-                    onClick={() => {
-                      setIsIntroDropdownOpen(false);
-                      window.scrollTo(0, 0);
-                    }}
+                    onClick={handleLinkClick}
                   >
                     White Paper
+                  </Link>
+                  <Link 
+                    to="/roadmap" 
+                    className="dropdown-item"
+                    onClick={handleLinkClick}
+                  >
+                    Road Map
                   </Link>
                 </div>
               )}
