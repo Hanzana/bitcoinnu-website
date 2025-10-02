@@ -75,7 +75,9 @@ const Header = () => {
               )}
             </div>
             
-            <a href="#resources">Resources</a>
+            <Link to="/downloads" onClick={handleLinkClick}>
+              Resources
+            </Link>
             <a href="#innovation">Innovation</a>
             <a href="#participate">Participate</a>
             <a href="#faq">FAQ</a>
