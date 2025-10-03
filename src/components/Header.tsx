@@ -16,7 +16,7 @@ const Header = () => {
       <div className="container header-container">
         <div className="header-content">
           <div className="header-brand">
-            <Link to="/" className="header-logo-link">
+            <Link to="/" className="header-logo-link" onClick={handleLinkClick}>
               <img 
                 src={bitcoinNuIcon} 
                 alt="BitcoinNu Logo" 
@@ -24,7 +24,7 @@ const Header = () => {
               />
             </Link>
             <div className="header-text">
-              <Link to="/" className="header-text-link">
+              <Link to="/" className="header-text-link" onClick={handleLinkClick}>
                 <h1 className="header-title">BitcoinNu</h1>
                 <p className="header-subtitle">Next-Gen Crypto</p>
               </Link>
@@ -32,7 +32,9 @@ const Header = () => {
           </div>
           
           <nav className="header-nav">
-            <a href="#features">Features</a>
+            <Link to="/" onClick={handleLinkClick}>
+              Features
+            </Link>
             
             <div 
               className="dropdown"
