@@ -222,9 +222,14 @@ const FAQ = () => {
               Join our community or check out our resources for more information
             </p>
             <div className="faq-cta-actions">
-              <a href="#" className="btn btn-primary btn-lg">
-                Join Community
-              </a>
+            <a 
+            href="https://discord.com/invite/your-server-link" 
+            target="_blank" 
+            rel="noopener noreferrer" 
+            className="btn btn-primary btn-lg"
+            >
+            Join Community
+            </a>
               <Link 
                 to="/downloads" 
                 className="btn btn-secondary btn-lg"
