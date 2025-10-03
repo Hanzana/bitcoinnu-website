@@ -9,6 +9,7 @@ import NotFound from "./pages/NotFound";
 import WhitePaper from "./pages/WhitePaper";
 import Downloads from "./pages/Downloads";
 import RoadMap from "./pages/RoadMap";
+import FAQ from "./pages/FAQ";
 
 const queryClient = new QueryClient();
 
@@ -23,6 +24,7 @@ const App = () => (
           <Route path="/whitepaper" element={<WhitePaper />} />
           <Route path="/downloads" element={<Downloads />} />
           <Route path="/roadmap" element={<RoadMap />} />
+          <Route path="/faq" element={<FAQ />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
         <Footer />

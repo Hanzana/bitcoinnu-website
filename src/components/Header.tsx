@@ -80,7 +80,9 @@ const Header = () => {
             </Link>
             <a href="#innovation">Innovation</a>
             <a href="#participate">Participate</a>
-            <a href="#faq">FAQ</a>
+            <Link to="/faq" onClick={handleLinkClick}>
+              FAQ
+            </Link>
           </nav>
           
           <div className="header-actions">
