@@ -80,7 +80,9 @@ const Header = () => {
             <Link to="/downloads" onClick={handleLinkClick}>
               Resources
             </Link>
-            <a href="#innovation">Innovation</a>
+            <Link to="/innovation" onClick={handleLinkClick}>
+              Innovation
+            </Link>
             <a href="#participate">Participate</a>
             <Link to="/faq" onClick={handleLinkClick}>
               FAQ

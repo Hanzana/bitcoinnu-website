@@ -10,6 +10,7 @@ import WhitePaper from "./pages/WhitePaper";
 import Downloads from "./pages/Downloads";
 import RoadMap from "./pages/RoadMap";
 import FAQ from "./pages/FAQ";
+import Innovation from "./pages/Innovation";
 
 const queryClient = new QueryClient();
 
@@ -25,6 +26,7 @@ const App = () => (
           <Route path="/downloads" element={<Downloads />} />
           <Route path="/roadmap" element={<RoadMap />} />
           <Route path="/faq" element={<FAQ />} />
+          <Route path="/innovation" element={<Innovation />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
         <Footer />
