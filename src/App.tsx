@@ -11,6 +11,8 @@ import Downloads from "./pages/Downloads";
 import RoadMap from "./pages/RoadMap";
 import FAQ from "./pages/FAQ";
 import Innovation from "./pages/Innovation";
+import HelpCenter from "./pages/HelpCenter";
+import AboutUs from "./pages/AboutUs";
 
 const queryClient = new QueryClient();
 
@@ -27,6 +29,8 @@ const App = () => (
           <Route path="/roadmap" element={<RoadMap />} />
           <Route path="/faq" element={<FAQ />} />
           <Route path="/innovation" element={<Innovation />} />
+          <Route path="/helpcenter" element={<HelpCenter />} />
+          <Route path="/aboutus" element={<AboutUs />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
         <Footer />

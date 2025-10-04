@@ -42,15 +42,31 @@ const Footer = () => {
               <h4 className="footer-links-title">Support</h4>
               <ul className="footer-links-list">
                 <li><a href="#" className="footer-link">Contact Us</a></li>
-                <li><a href="#" className="footer-link">Help Center</a></li>
-                <li><a href="#" className="footer-link">Security</a></li>
+                <li>
+                  <Link 
+                    to="/helpcenter"
+                    className="footer-link"
+                    onClick={handleLinkClick}
+                  >
+                    Help Center
+                  </Link>
+                 </li>
+                <li><a href="#" className="footer-link">FAQs</a></li>
               </ul>
             </div>
 
             <div className="footer-links-column">
               <h4 className="footer-links-title">Company</h4>
               <ul className="footer-links-list">
-                <li><a href="#" className="footer-link">About Us</a></li>
+                <li>
+                  <Link 
+                    to="/aboutus"
+                    className="footer-link"
+                    onClick={handleLinkClick}
+                  >
+                    About Us
+                  </Link>
+                 </li>
                 <li><a href="#" className="footer-link">Careers</a></li>
                 <li><a href="#" className="footer-link">Legal</a></li>
               </ul>
