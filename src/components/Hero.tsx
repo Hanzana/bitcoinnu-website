@@ -62,6 +62,15 @@ const Hero = () => {
             </div>
           </div>
           <div className="hero-actions">
+            <a 
+              href="https://explorer-uk.bitcoinnu.io/" 
+              target="_blank"
+              rel="noopener noreferrer"
+              className="btn btn-hero btn-lg"
+            >
+              Go To Explorer
+              <ArrowRight />
+            </a>
             <Link 
               to="/downloads" 
               className="btn btn-hero btn-lg"
@@ -71,16 +80,7 @@ const Hero = () => {
               <ArrowRight />
             </Link>
           </div>
-          <div className="hero-price-card">
-            <div className="hero-price-row">
-              <span className="hero-price-label">Current Price</span>
-              <span className="hero-price-value">$0.0042</span>
-            </div>
-            <div className="hero-price-row">
-              <span className="hero-price-label">24h Change</span>
-              <span className="hero-price-change">+12.8%</span>
-            </div>
-          </div>
+
         </div>
       </div>
     </section>
