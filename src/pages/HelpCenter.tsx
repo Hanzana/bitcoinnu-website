@@ -84,7 +84,14 @@ const HelpCenter = () => {
             <p className="help-contact-description">
               Our support team is available 24/7 to assist you with any questions or issues.
             </p>
-            <button className="btn btn-hero btn-lg">Contact Support</button>
+            <a 
+              href="https://discord.gg/bygZBTNMkC" 
+              target="_blank"
+              rel="noopener noreferrer"
+              className="btn btn-hero btn-lg"
+            >
+              Contact Support
+            </a>
           </div>
         </div>
       </section>

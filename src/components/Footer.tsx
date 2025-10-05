@@ -129,7 +129,7 @@ const Footer = () => {
                 </li>
                 <li>
                   <a 
-                    href="https://discord.com/invite/server-link" 
+                    href="https://discord.gg/bygZBTNMkC" 
                     className="footer-link"
                     target="_blank"
                     rel="noopener noreferrer"
