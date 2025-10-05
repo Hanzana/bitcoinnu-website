@@ -41,7 +41,15 @@ const Footer = () => {
             <div className="footer-links-column">
               <h4 className="footer-links-title">Support</h4>
               <ul className="footer-links-list">
-                <li><a href="#" className="footer-link">Contact Us</a></li>
+                <li>
+                  <Link 
+                    to="/contact"
+                    className="footer-link"
+                    onClick={handleLinkClick}
+                  >
+                    Contact Us
+                  </Link>
+                </li>
                 <li>
                   <Link 
                     to="/helpcenter"
@@ -51,7 +59,15 @@ const Footer = () => {
                     Help Center
                   </Link>
                  </li>
-                <li><a href="#" className="footer-link">FAQs</a></li>
+                <li>
+                  <Link 
+                    to="/faq"
+                    className="footer-link"
+                    onClick={handleLinkClick}
+                  >
+                    FAQs
+                  </Link>
+                </li>
               </ul>
             </div>
 
@@ -67,8 +83,26 @@ const Footer = () => {
                     About Us
                   </Link>
                  </li>
-                <li><a href="#" className="footer-link">Careers</a></li>
-                <li><a href="#" className="footer-link">Legal</a></li>
+                <li>
+                  <a 
+                    href="https://explorer-jp.bitcoinnu.io/" 
+                    className="footer-link"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    Explorer (Japan)
+                  </a>
+                </li>
+                <li>
+                  <a 
+                    href="https://explorer-uk.bitcoinnu.io/" 
+                    className="footer-link"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    Explorer (UK)
+                  </a>
+                </li>
               </ul>
             </div>
 
@@ -93,7 +127,16 @@ const Footer = () => {
                     Roadmap
                   </Link>
                 </li>
-                <li><a href="#" className="footer-link">Community</a></li>
+                <li>
+                  <a 
+                    href="https://discord.com/invite/server-link" 
+                    className="footer-link"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    Community
+                  </a>
+                </li>
               </ul>
             </div>
           </div>

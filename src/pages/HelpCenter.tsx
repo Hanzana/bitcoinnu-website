@@ -1,37 +1,10 @@
-import { HelpCircle, Book, Shield, Wallet, Download, Users, Search, MessageCircle } from "lucide-react";
+import { HelpCircle, Book, Search, MessageCircle } from "lucide-react";
 import Header from "@/components/Header";
 import { useState } from "react";
 import "../styles/helpcenter.css";
 
 const HelpCenter = () => {
   const [searchQuery, setSearchQuery] = useState("");
-
-  const categories = [
-    {
-      icon: Wallet,
-      title: "Wallet Setup",
-      description: "Learn how to set up and secure your BitcoinNu wallet",
-      articles: 12
-    },
-    {
-      icon: Download,
-      title: "Getting Started",
-      description: "Download, install, and begin using BitcoinNu",
-      articles: 8
-    },
-    {
-      icon: Shield,
-      title: "Security",
-      description: "Best practices for keeping your assets safe",
-      articles: 15
-    },
-    {
-      icon: Users,
-      title: "Mining",
-      description: "Start mining BitcoinNu with your PC or laptop",
-      articles: 10
-    }
-  ];
 
   const popularArticles = [
     "How to create a BitcoinNu wallet",
@@ -76,28 +49,6 @@ const HelpCenter = () => {
               value={searchQuery}
               onChange={(e) => setSearchQuery(e.target.value)}
             />
-          </div>
-        </div>
-      </section>
-
-      <section className="help-categories">
-        <div className="container">
-          <h2 className="help-section-title">Browse by Category</h2>
-          
-          <div className="help-categories-grid">
-            {categories.map((category, index) => {
-              const Icon = category.icon;
-              return (
-                <div key={index} className="help-category-card">
-                  <div className="help-category-icon">
-                    <Icon />
-                  </div>
-                  <h3 className="help-category-title">{category.title}</h3>
-                  <p className="help-category-description">{category.description}</p>
-                  <div className="help-category-meta">{category.articles} articles</div>
-                </div>
-              );
-            })}
           </div>
         </div>
       </section>

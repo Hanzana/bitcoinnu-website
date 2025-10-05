@@ -223,7 +223,7 @@ const FAQ = () => {
             </p>
             <div className="faq-cta-actions">
             <a 
-            href="https://discord.com/invite/your-server-link" 
+            href="https://discord.com/invite/server-link" 
             target="_blank" 
             rel="noopener noreferrer" 
             className="btn btn-primary btn-lg"
