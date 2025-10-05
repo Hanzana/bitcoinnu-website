@@ -38,7 +38,6 @@ const Header = () => {
             </div>
           </div>
           
-          {/* Desktop Navigation */}
           <nav className="header-nav">
             <Link to="/" onClick={handleLinkClick}>
               Features
@@ -91,13 +90,14 @@ const Header = () => {
             <Link to="/innovation" onClick={handleLinkClick}>
               Innovation
             </Link>
-            <a href="#participate">Participate</a>
+            <Link to="/participate" onClick={handleLinkClick}>
+              Participate
+            </Link>
             <Link to="/faq" onClick={handleLinkClick}>
               FAQ
             </Link>
           </nav>
           
-          {/* Mobile Menu Button */}
           <button 
             className="mobile-menu-button"
             onClick={toggleMobileMenu}
@@ -186,9 +186,9 @@ const Header = () => {
           <Link to="/innovation" onClick={handleLinkClick} className="mobile-nav-item">
             Innovation
           </Link>
-          <a href="#participate" onClick={handleLinkClick} className="mobile-nav-item">
+          <Link to="/participate" onClick={handleLinkClick} className="mobile-nav-item">
             Participate
-          </a>
+          </Link>
           <Link to="/faq" onClick={handleLinkClick} className="mobile-nav-item">
             FAQ
           </Link>
