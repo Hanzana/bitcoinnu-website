@@ -5,7 +5,7 @@ import "../styles/whitepaper.css";
 const WhitePaper = () => {
   const handleDownload = () => {
     const link = document.createElement('a');
-    link.href = '/bitcoinnu-website/Whitepaper.pdf';
+    link.href = '/Whitepaper.pdf';
     link.download = 'BitcoinNu-Whitepaper.pdf';
     document.body.appendChild(link);
     link.click();
