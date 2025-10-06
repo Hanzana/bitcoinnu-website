@@ -19,7 +19,7 @@ const Downloads = () => {
       version: "v2.1.0",
       size: "92 MB",
       description: "Compatible with macOS 11.0 or later",
-      downloadUrl: "#"
+      downloadUrl: "/binaries/bitcoinnu-macos.zip"
     },
     {
       logoUrl: "https://upload.wikimedia.org/wikipedia/commons/3/35/Tux.svg",
@@ -74,10 +74,10 @@ const Downloads = () => {
                         <span className="download-separator">•</span>
                         <span className="download-size">{option.size}</span>
                       </div>
-                      <button className="btn btn-download">
-                        <Download size={20} />
-                        Download for {option.platform}
-                      </button>
+                      <a target="_blank" href={option.downloadUrl} className="btn btn-download">
+                        <Download size={16} />
+                        Download
+                      </a>
                     </div>
                   </div>
                 );
