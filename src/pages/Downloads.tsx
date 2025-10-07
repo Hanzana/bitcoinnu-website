@@ -11,7 +11,7 @@ const Downloads = () => {
       version: "v2.1.0",
       size: "85 MB",
       description: "Compatible with Windows 10 and 11",
-      downloadUrl: "#"
+      downloadUrl: "https://explorer-uk.bitcoinnu.io/binaries/bitcoinnu-windows.zip"
     },
     {
       logoUrl: "https://upload.wikimedia.org/wikipedia/commons/f/fa/Apple_logo_black.svg",
