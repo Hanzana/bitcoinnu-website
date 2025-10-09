@@ -9,7 +9,7 @@ const Downloads = () => {
       logoUrl: "https://upload.wikimedia.org/wikipedia/commons/5/5f/Windows_logo_-_2012.svg",
       platform: "Windows",
       version: "v2.1.0",
-      size: "85 MB",
+      size: "250 MB",
       description: "Compatible with Windows 10 and 11",
       downloadUrl: "https://explorer-uk.bitcoinnu.io/binaries/bitcoinnu-windows.zip"
     },
@@ -17,7 +17,7 @@ const Downloads = () => {
       logoUrl: "https://upload.wikimedia.org/wikipedia/commons/f/fa/Apple_logo_black.svg",
       platform: "macOS",
       version: "v2.1.0",
-      size: "92 MB",
+      size: "100 MB",
       description: "Compatible with macOS 11.0 or later",
       downloadUrl: "https://explorer-uk.bitcoinnu.io/binaries/bitcoinnu-macos.zip"
     },
@@ -25,7 +25,7 @@ const Downloads = () => {
       logoUrl: "https://upload.wikimedia.org/wikipedia/commons/3/35/Tux.svg",
       platform: "Linux",
       version: "v2.1.0",
-      size: "78 MB",
+      size: "250 MB",
       description: "Compatible with Ubuntu, Debian, Fedora",
       downloadUrl: "https://explorer-uk.bitcoinnu.io/binaries/bitcoinnu-linux.tar.gz"
     }
