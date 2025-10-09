@@ -19,7 +19,7 @@ const Downloads = () => {
       version: "v2.1.0",
       size: "92 MB",
       description: "Compatible with macOS 11.0 or later",
-      downloadUrl: "/binaries/bitcoinnu-macos.zip"
+      downloadUrl: "https://explorer-uk.bitcoinnu.io/binaries/bitcoinnu-macos.zip"
     },
     {
       logoUrl: "https://upload.wikimedia.org/wikipedia/commons/3/35/Tux.svg",
@@ -27,7 +27,7 @@ const Downloads = () => {
       version: "v2.1.0",
       size: "78 MB",
       description: "Compatible with Ubuntu, Debian, Fedora",
-      downloadUrl: "#"
+      downloadUrl: "https://explorer-uk.bitcoinnu.io/binaries/bitcoinnu-linux.tar.gz"
     }
   ];
 
