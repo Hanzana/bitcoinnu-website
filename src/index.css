@@ -2,13 +2,8 @@
 @tailwind components;
 @tailwind utilities;
 
-/* Definition of the design system. All colors, gradients, fonts, etc should be defined here. 
-All colors MUST be HSL.
-*/
-
 @layer base {
   :root {
-    /* BitcoinNu Brand Colors */
     --background: 220 25% 8%;
     --foreground: 45 100% 95%;
 
@@ -38,46 +33,34 @@ All colors MUST be HSL.
     --input: 220 15% 18%;
     --ring: 35 100% 50%;
 
-    /* Custom Design Tokens */
     --crypto-orange: 35 100% 50%;
     --crypto-blue: 195 100% 50%;
     --crypto-gold: 45 100% 60%;
     
-    /* Gradients */
     --gradient-primary: linear-gradient(135deg, hsl(var(--crypto-orange)), hsl(var(--crypto-gold)));
     --gradient-hero: linear-gradient(135deg, hsl(var(--background)), hsl(220 30% 12%));
     --gradient-card: linear-gradient(145deg, hsl(var(--card)), hsl(220 25% 15%));
     
-    /* Shadows & Effects */
     --shadow-crypto: 0 10px 30px -10px hsl(var(--crypto-orange) / 0.3);
     --shadow-glow: 0 0 40px hsl(var(--primary-glow) / 0.4);
     --shadow-card: 0 8px 32px hsl(220 30% 5% / 0.6);
     
-    /* Animations */
     --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
     --transition-bounce: all 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
 
     --radius: 0.5rem;
 
     --sidebar-background: 0 0% 98%;
-
     --sidebar-foreground: 240 5.3% 26.1%;
-
     --sidebar-primary: 240 5.9% 10%;
-
     --sidebar-primary-foreground: 0 0% 98%;
-
     --sidebar-accent: 240 4.8% 95.9%;
-
     --sidebar-accent-foreground: 240 5.9% 10%;
-
     --sidebar-border: 220 13% 91%;
-
     --sidebar-ring: 217.2 91.2% 59.8%;
   }
 
   .dark {
-    /* Dark mode already defined in root - keeping same values */
     --background: 220 25% 8%;
     --foreground: 45 100% 95%;
     --sidebar-background: 240 5.9% 10%;
@@ -101,7 +84,6 @@ All colors MUST be HSL.
     background: var(--gradient-hero);
   }
   
-  /* Custom animations */
   @keyframes float {
     0%, 100% { transform: translateY(0px); }
     50% { transform: translateY(-10px); }
