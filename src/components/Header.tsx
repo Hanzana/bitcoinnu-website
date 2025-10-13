@@ -85,7 +85,7 @@ const Header = () => {
             </div>
             
             <Link to="/downloads" onClick={handleLinkClick}>
-              Resources
+              Downloads
             </Link>
             <Link to="/innovation" onClick={handleLinkClick}>
               Innovation
